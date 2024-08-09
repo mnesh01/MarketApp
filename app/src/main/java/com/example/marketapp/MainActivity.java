@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -47,11 +48,19 @@ public class MainActivity extends AppCompatActivity {
         itemList.add(item5);
         itemList.add(item6);
 
+        //create an instance of the linear layout manager class that will handle the layout
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);  //sets the layout manager
+
 
         myAdapter = new MyAdapter(itemList);
         recyclerView.setAdapter(myAdapter);
 
+
         // need to add a linear layout manager to view the list
+
+
+
 
     }
 }
