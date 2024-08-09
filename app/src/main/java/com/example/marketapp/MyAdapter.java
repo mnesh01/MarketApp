@@ -13,11 +13,11 @@ import java.util.List;
 
 //extending means creating a new class that inherits the behaviours of the current class
 // Creates a blue print of how the recycler view should create and populate its items
-public class Myadapter extends RecyclerView.Adapter<Myadapter.MyViewHolder> {
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private List<Item> itemList;
 
-    public Myadapter(List<Item> itemList) {
+    public MyAdapter(List<Item> itemList) {
         this.itemList = itemList;
     }
 
